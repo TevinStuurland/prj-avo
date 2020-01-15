@@ -127,6 +127,9 @@ header h1{
 .avo-info{
   width: 600px;
   display: flex;
+  overflow-x:auto;
+  flex-wrap: nowrap;
+  
 }
 
 .avo-info figure{
@@ -174,7 +177,11 @@ div.four figure:active{
 /* #RESPONSIVE CODE */
 @media (max-width: 600px) {
   h1{
-    font-size: 2.5em;
+    font-size: 2em;
+  }
+
+  section{
+    margin: 0 auto;
   }
   
   header h1{
