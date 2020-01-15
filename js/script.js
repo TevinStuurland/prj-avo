@@ -15,8 +15,11 @@ $("main").onepage_scroll({
   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
 });
 
-if (window.width > 600) {
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  // some code..
+ }else
+ {
+ //Now include js files
   var scene = document.getElementById('scene');
   var parallaxInstance = new Parallax(scene);
-}
-
+ }
