@@ -61,13 +61,12 @@ h1{
   font-family: var(--heading-font);
 }
 
-p{
+p, ul, ol{
   font-size: 1em;
   line-height: 2em;
   margin: 20px 0;
   font-family: var(--body-font);
 }
-
 
 section{
   width: 600px;
@@ -126,7 +125,50 @@ header h1{
 
 /* #AVO-INFO */
 .avo-info{
+  width: 600px;
   display: flex;
+}
+
+.avo-info figure{
+  width: 400px;
+  height: 400px;
+  display: block;
+}
+
+div.one, div.two, div.three, div.four{
+  margin: 0 20px 0 0;
+}
+
+div.one figure{
+  background: url("https://via.placeholder.com/400x400") no-repeat;
+}
+
+div.one figure:active{
+  background: url("https://via.placeholder.com/400x400/yellow") no-repeat;
+}
+
+div.two figure{
+  background: url("https://via.placeholder.com/400x400") no-repeat;
+}
+
+div.two figure:active{
+  background: url("https://via.placeholder.com/400x400/yellow") no-repeat;
+}
+
+div.three figure{
+  background: url("https://via.placeholder.com/400x400") no-repeat;
+}
+
+div.three figure:active{
+  background: url("https://via.placeholder.com/400x400/yellow") no-repeat;
+}
+
+div.four figure{
+  background: url("https://via.placeholder.com/400x400") no-repeat;
+}
+
+div.four figure:active{
+  background: url("https://via.placeholder.com/400x400/yellow") no-repeat;
 }
 
 /* #RESPONSIVE CODE */
