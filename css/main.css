@@ -93,6 +93,10 @@ header h1{
   font-family: var(--title-font);
 }
 
+#scene + div{
+  left: 50%!important;
+}
+
 /* #MAIN */
 .part-1{
   color: var(--neutral-light);
@@ -120,7 +124,7 @@ header h1{
   }
   
   header h1{
-    font-size: 4em;
+    font-size: 3.5em;
   }
 
   header p{
