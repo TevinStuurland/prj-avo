@@ -80,11 +80,10 @@ img{
 
 /* #HEADER */
 header{
-  margin: 0 auto;
-  padding: var(--padding-light);
-  /*background-color: var(--g-dark);*/
-  color: var(--neutral-dark);
   width: 600px;
+  margin: 0 auto;
+  color: var(--neutral-dark);
+  padding: var(--padding-light);
 }
 
 header img{
@@ -129,48 +128,6 @@ header h1{
   display: flex;
   overflow-x:auto;
   flex-wrap: nowrap;
-}
-
-.avo-info figure{
-  width: 400px;
-  height: 400px;
-  display: block;
-}
-
-div#one, div#two, div#three, div#four{
-  margin: 0 20px 0 0;
-}
-
-div#one figure{
-  background: url("https://via.placeholder.com/400x400") no-repeat;
-}
-
-div#one figure:hover{
-  background: url("https://via.placeholder.com/400x400/yellow") no-repeat;
-}
-
-div#two figure{
-  background: url("https://via.placeholder.com/400x400") no-repeat;
-}
-
-div#two figure:hover{
-  background: url("https://via.placeholder.com/400x400/yellow") no-repeat;
-}
-
-div#three figure{
-  background: url("https://via.placeholder.com/400x400") no-repeat;
-}
-
-div#three figure:hover{
-  background: url("https://via.placeholder.com/400x400/yellow") no-repeat;
-}
-
-div#four figure{
-  background: url("https://via.placeholder.com/400x400") no-repeat;
-}
-
-div#four figure:hover{
-  background: url("https://via.placeholder.com/400x400/yellow") no-repeat;
 }
 
 /* #RESPONSIVE CODE */
