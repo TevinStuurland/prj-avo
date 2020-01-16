@@ -64,7 +64,7 @@ body, .onepage-wrapper, html {
   background: none;
   border: 1px solid black;
   margin-top: -4px;
-  left: 8px;
+  left: 6px;
 }
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
