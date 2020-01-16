@@ -22,4 +22,4 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
  //Now include js files
   var scene = document.getElementById('scene');
   var parallaxInstance = new Parallax(scene);
- }
+};
