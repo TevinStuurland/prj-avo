@@ -70,11 +70,30 @@ p, ul, ol{
 
 section{
   width: 600px;
-  margin: 90px auto;
+  margin: 0 auto;
+  padding: 20% 0; 
 }
 
 img{
   max-width: 100%;
+}
+
+i{
+  font-style: italic;
+}
+
+blockquote p{
+  margin: 0;
+  padding: 2em;
+  font-style: italic;
+  color: var(--neutral-dark);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-left: 10px solid rgba(255, 255, 255, 1);
+}
+
+blockquote footer{
+  padding: 1em 0;
+  font-style: italic;
 }
 
 
@@ -94,11 +113,6 @@ header h1{
   font-size: 5em;
   text-align: center;
   font-family: var(--title-font);
-}
-
-#scene > div + div{ 
-  left: 10%!important;
-  top: 10%!important;
 }
 
 /* #MAIN */
