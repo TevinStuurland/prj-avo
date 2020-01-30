@@ -30,6 +30,7 @@ time, mark, audio, video {
 
 :root{
   --neutral-light: #ffffff;
+  --off-light: #FCFAF6;
   --neutral-dark: #3F444C;
   --b-dark: #684B37;
   --b-light: #AF630E;
@@ -51,14 +52,14 @@ body{
 }
 
 h1{
-  font-size: 2.5em;
+  font-size: 3.5em;
   font-weight: 900;
   font-family: var(--heading-font);
 }
 
 p, ul, ol{
-  font-size: 1em;
-  line-height: 2.5em;
+  font-size: 1.1em;
+  line-height: 1.9m;
   margin: 20px 0;
   font-family: var(--body-font);
 }
@@ -119,16 +120,14 @@ blockquote footer{
 header{
   width: 600px;
   margin: 0 auto;
-  padding: 30vh 0;
+  padding: 10vh 0 30vh 0;
   color: var(--neutral-dark);
 }
 
 header h1{
-  color: black;
-  font-size: 5em;
+  font-size: 2em;
   text-align: center;
   font-family: var(--heading-font);
-  
 }
 
 header h1 + img{
@@ -139,31 +138,34 @@ header h1 + img{
   position: sticky;
   margin: 20px auto;
   position: -webkit-sticky;
-  background-color: rgba(252, 250, 246, 0.9);
 }
 
 /* #MAIN */
 .intro{
-  background-color:#FCFAF6;
+  background-color:var(--off-light);
 }
 
 .part-1{
+  background-color:var(--off-light);
   color: var(--neutral-dark);
 }
 
 .part-2{
+  background-color:var(--off-light);
   color: var(--neutral-dark);
 }
 
 .part-3{
+  background-color:var(--off-light);
   color: var(--neutral-dark);
 }
 
 .part-4{
+  background-color:var(--off-light);
   color: var(--neutral-dark);
 }
 
-/* #AVO-INFO */
+/* #AVOCADO-INFO */
 .avo-info{
   width: 600px;
   overflow-x:auto;
@@ -171,76 +173,100 @@ header h1 + img{
 
 .avo-info figure{
   display: block;
-  padding-right: 2em;
 }
 
-.avo-info figure p{
-  margin: 7px 0;
+.avo-info figure li{
+  margin: 10px 0;
   line-height: 1em;
-  font-size: 0.7em;
+  font-size: 1em;
+}
+
+.avo-info figure li:nth-child(1){
+  margin-top: -10px;
 }
 
 .avo-info figure figcaption{
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .one, .two, .three, .four{
   display:flex;
   margin: 20px 0;
+  height: 350px;
+  background-size: 350px;
   background-color: #F5F5F5;
-}
-
-.one{
-  height: 200px;
-  background-size: 200px;
-  background-repeat: no-repeat;
-  background-image: url("https://via.placeholder.com/200x200");
 }
 
 .one figure, .two figure, .three figure, .four figure{
   margin-top: 30px;
-  margin-left: 240px;
+  margin-left: 390px;
+  margin-right: 40px;
+}
+
+.one{
+  background-repeat: no-repeat;
+  background-image: url("https://via.placeholder.com/200x200");
+
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .two{
-  height: 200px;
-  background-size: 200px;
   background-repeat: no-repeat;
   background-image: url("https://via.placeholder.com/200x200");
+
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .three{
-  height: 200px;
-  background-size: 200px;
   background-repeat: no-repeat;
   background-image: url("https://via.placeholder.com/200x200");
+
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .four{
-  height: 200px;
-  background-size: 200px;
   background-repeat: no-repeat;
   background-image: url("https://via.placeholder.com/200x200");
+
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .one:hover{
   background-image: url("https://via.placeholder.com/200x200/f00/fff");
+
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .two:hover{
   background-image: url("https://via.placeholder.com/200x200/f00/fff");
+
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .three:hover{
   background-image: url("https://via.placeholder.com/200x200/f00/fff");
+
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .four:hover{
   background-image: url("https://via.placeholder.com/200x200/f00/fff");
+
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
 }
 
 /* #RESPONSIVE CODE */
 @media (max-width: 600px) {
+
+  /*#HEADER*/
   h1{
     font-size: 2em;
   }
@@ -253,7 +279,32 @@ header h1 + img{
     font-size: 3.5em;
   }
 
+  header p{
+    width: 100%;
+    text-align: left;
+  }
+  section, header{
+    width: 100%;
+    padding: 2em;
+  }
+
+  /*#MAIN*/
+  p i:hover{
+    color: var(--neutral-dark);
+  }
+  i:hover + .show_info{
+    opacity: 0;
+  }
+
   /*#AVOCADO*/
+  .avo-info{
+    width:100%;
+  }
+
+  .one figure, .two figure, .three figure, .four figure{
+    display: none;
+  }
+
   .one{
     background-image: url("https://via.placeholder.com/200x200/f00/fff");
   }
@@ -270,27 +321,13 @@ header h1 + img{
     background-image: url("https://via.placeholder.com/200x200/f00/fff");
   }
 
-  header p{
-    width: 100%;
-    text-align: left;
-  }
-  section, header{
-    width: 100%;
-    padding: 2em;
-  }
-  .avo-info{
-    width:100%;
-  }
-
-  .avo-info figure p{
-    margin: 8px 0;
-    line-height: 1em;
-    font-size: 0.7em;
+  .avo-info figure li:nth-child(1){
+    margin-top: -10px;
   }
 
   .one figure, .two figure, .three figure, .four figure{
     margin-top: 20px;
-    margin-left: 220px;
+    margin-left: 240px;
   }
 }
 
