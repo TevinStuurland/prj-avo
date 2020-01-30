@@ -59,7 +59,7 @@ h1{
 
 p, ul, ol{
   font-size: 1.1em;
-  line-height: 1.9m;
+  line-height: 1.9em;
   margin: 20px 0;
   font-family: var(--body-font);
 }
@@ -151,7 +151,7 @@ header h1 + img{
 }
 
 .part-2{
-  background-color:var(--off-light);
+  background-color:var(--neutral-light);
   color: var(--neutral-dark);
 }
 
@@ -161,7 +161,7 @@ header h1 + img{
 }
 
 .part-4{
-  background-color:var(--off-light);
+  background-color:var(--neutral-light);
   color: var(--neutral-dark);
 }
 
@@ -185,79 +185,61 @@ header h1 + img{
   margin-top: -10px;
 }
 
-.avo-info figure figcaption{
+.avo-info figcaption{
   font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .one, .two, .three, .four{
-  display:flex;
   margin: 20px 0;
-  height: 350px;
-  background-size: 350px;
-  background-color: #F5F5F5;
 }
 
 .one figure, .two figure, .three figure, .four figure{
-  margin-top: 30px;
-  margin-left: 390px;
-  margin-right: 40px;
+  height: 600px;
+  background-size: 600px;
 }
 
-.one{
+.one figure{
   background-repeat: no-repeat;
-  background-image: url("https://via.placeholder.com/200x200");
+  background-image: url("../media/img/avocados/hass-avocado.jpg");
 
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
 }
 
-.two{
+.two figure{
   background-repeat: no-repeat;
-  background-image: url("https://via.placeholder.com/200x200");
+  background-image: url("../media/img/avocados/fuerte-avocado.jpg");
 
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
 }
 
-.three{
+.three figure{
   background-repeat: no-repeat;
-  background-image: url("https://via.placeholder.com/200x200");
+  background-image: url("../media/img/avocados/ettinger-avocado.jpg");
 
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
 }
 
-.four{
+.four figure{
   background-repeat: no-repeat;
-  background-image: url("https://via.placeholder.com/200x200");
+  background-image: url("../media/img/avocados/nabal-avocado.jpg");
 
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
 }
 
-.one:hover{
-  background-image: url("https://via.placeholder.com/200x200/f00/fff");
+.one figure:hover{
+  background-image: url("../media/img/avocados/hass-avocado-info.jpg");
 
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
 }
 
-.two:hover{
-  background-image: url("https://via.placeholder.com/200x200/f00/fff");
-
-  -webkit-transition: background-image 0.5s ease-in-out;
-  transition: background-image 0.5s ease-in-out;
-}
-
-.three:hover{
-  background-image: url("https://via.placeholder.com/200x200/f00/fff");
-
-  -webkit-transition: background-image 0.5s ease-in-out;
-  transition: background-image 0.5s ease-in-out;
-}
-
-.four:hover{
-  background-image: url("https://via.placeholder.com/200x200/f00/fff");
+.two figure:hover{
+  background-image: url("../media/img/avocados/fuerte-avocado-info.jpg");
 
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
@@ -300,34 +282,42 @@ header h1 + img{
   .avo-info{
     width:100%;
   }
+  .one figure{
+    background-image: url("../media/img/avocados/hass-avocado-info.jpg");
+  
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
+  }
 
-  .one figure, .two figure, .three figure, .four figure{
-    display: none;
+  .two figure{
+    background-image: url("../media/img/avocados/fuerte-avocado-info.jpg");
+  
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
   }
 
-  .one{
-    background-image: url("https://via.placeholder.com/200x200/f00/fff");
+  .three figure{
+    background-repeat: no-repeat;
+    background-image: url("../media/img/avocados/ettinger-avocado.jpg");
+  
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
   }
   
-  .two{
-    background-image: url("https://via.placeholder.com/200x200/f00/fff");
-  }
+  .four figure{
+    background-repeat: no-repeat;
+    background-image: url("../media/img/avocados/nabal-avocado.jpg");
   
-  .three{
-    background-image: url("https://via.placeholder.com/200x200/f00/fff");
-  }
-  
-  .four{
-    background-image: url("https://via.placeholder.com/200x200/f00/fff");
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
   }
 
   .avo-info figure li:nth-child(1){
     margin-top: -10px;
   }
-
   .one figure, .two figure, .three figure, .four figure{
-    margin-top: 20px;
-    margin-left: 240px;
+    height: 300px;
+    background-size: 600px;
   }
 }
 
