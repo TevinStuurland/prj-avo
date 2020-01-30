@@ -44,26 +44,21 @@ time, mark, audio, video {
   --title-font: Avocado, sans-serif;
   --heading-font: 'Noto Serif', serif;
   --body-font: 'Open Sans', sans-serif;
-
-  --padding-light: 2em;
-  --padding-heavy: 4em;
 }
 
-@font-face {
-  font-family: 'Avocado';
-  src: url('fonts/avo/avocado.otf'); /* IE9 Compat Modes */
-  src: url('fonts/avo/avocado.ttf'), /* IE6-IE8 */
+body{
+  overflow-x: hidden;
 }
 
 h1{
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 900;
   font-family: var(--heading-font);
 }
 
 p, ul, ol{
   font-size: 1em;
-  line-height: 2em;
+  line-height: 2.5em;
   margin: 20px 0;
   font-family: var(--body-font);
 }
@@ -71,10 +66,10 @@ p, ul, ol{
 section{
   width: 600px;
   margin: 0 auto;
-  padding: 20% 0; 
+  padding: 30vh 0; 
 }
 
-img{
+img, video{
   max-width: 100%;
 }
 
@@ -82,13 +77,36 @@ i{
   font-style: italic;
 }
 
+p i:hover{
+  cursor: default;
+  color: var(--g-light);
+}
+
+i:hover + .show_info{
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.show_info{
+  left: 7vw;
+  opacity: 0;
+  padding: 15px;
+  font-size: 12px;
+  font-style: italic;
+  position: absolute;
+  border-radius: 5px;
+  transition: opacity 0.5s;
+  color: var(--neutral-light);
+  background-color: rgba(108, 207, 89, 1);
+}
+
 blockquote p{
   margin: 0;
   padding: 2em;
   font-style: italic;
-  color: var(--neutral-dark);
-  background-color: rgba(255, 255, 255, 0.8);
-  border-left: 10px solid rgba(255, 255, 255, 1);
+  color: var(--neutral-light);
+  background-color: rgba(108, 207, 89, 0.8);
+  border-left: 10px solid rgb(204, 253, 195);
 }
 
 blockquote footer{
@@ -101,47 +119,124 @@ blockquote footer{
 header{
   width: 600px;
   margin: 0 auto;
+  padding: 30vh 0;
   color: var(--neutral-dark);
-  padding: var(--padding-light);
-}
-
-header img{
-  text-align: center;
 }
 
 header h1{
+  color: black;
   font-size: 5em;
   text-align: center;
-  font-family: var(--title-font);
+  font-family: var(--heading-font);
+  
+}
+
+header h1 + img{
+  top: 50px;
+  width: 110px;
+  padding: 10px;
+  display: block;
+  position: sticky;
+  margin: 20px auto;
+  position: -webkit-sticky;
+  background-color: rgba(252, 250, 246, 0.9);
 }
 
 /* #MAIN */
+.intro{
+  background-color:#FCFAF6;
+}
+
 .part-1{
-  color: var(--neutral-light);
-  background-color: var(--g-dark);
+  color: var(--neutral-dark);
 }
 
 .part-2{
   color: var(--neutral-dark);
-  background-color: var(--g-light);
 }
 
 .part-3{
   color: var(--neutral-dark);
-  background-color: var(--g-lighter);
 }
 
 .part-4{
   color: var(--neutral-dark);
-  background-color: var(--g-lightest);
 }
 
 /* #AVO-INFO */
 .avo-info{
   width: 600px;
-  display: flex;
   overflow-x:auto;
-  flex-wrap: nowrap;
+}
+
+.avo-info figure{
+  display: block;
+  padding-right: 2em;
+}
+
+.avo-info figure p{
+  margin: 7px 0;
+  line-height: 1em;
+  font-size: 0.7em;
+}
+
+.avo-info figure figcaption{
+  font-size: 1.5em;
+}
+
+.one, .two, .three, .four{
+  display:flex;
+  margin: 20px 0;
+  background-color: #F5F5F5;
+}
+
+.one{
+  height: 200px;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-image: url("https://via.placeholder.com/200x200");
+}
+
+.one figure, .two figure, .three figure, .four figure{
+  margin-top: 30px;
+  margin-left: 240px;
+}
+
+.two{
+  height: 200px;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-image: url("https://via.placeholder.com/200x200");
+}
+
+.three{
+  height: 200px;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-image: url("https://via.placeholder.com/200x200");
+}
+
+.four{
+  height: 200px;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-image: url("https://via.placeholder.com/200x200");
+}
+
+.one:hover{
+  background-image: url("https://via.placeholder.com/200x200/f00/fff");
+}
+
+.two:hover{
+  background-image: url("https://via.placeholder.com/200x200/f00/fff");
+}
+
+.three:hover{
+  background-image: url("https://via.placeholder.com/200x200/f00/fff");
+}
+
+.four:hover{
+  background-image: url("https://via.placeholder.com/200x200/f00/fff");
 }
 
 /* #RESPONSIVE CODE */
@@ -158,17 +253,21 @@ header h1{
     font-size: 3.5em;
   }
 
-  div#one figure{
-    background: url("https://via.placeholder.com/400x400/yellow") no-repeat;
+  /*#AVOCADO*/
+  .one{
+    background-image: url("https://via.placeholder.com/200x200/f00/fff");
   }
-  div#two figure{
-    background: url("https://via.placeholder.com/400x400/yellow") no-repeat;
+  
+  .two{
+    background-image: url("https://via.placeholder.com/200x200/f00/fff");
   }
-  div#three figure{
-    background: url("https://via.placeholder.com/400x400/yellow") no-repeat;
+  
+  .three{
+    background-image: url("https://via.placeholder.com/200x200/f00/fff");
   }
-  div#four figure{
-    background: url("https://via.placeholder.com/400x400/yellow") no-repeat;
+  
+  .four{
+    background-image: url("https://via.placeholder.com/200x200/f00/fff");
   }
 
   header p{
@@ -177,7 +276,21 @@ header h1{
   }
   section, header{
     width: 100%;
-    padding: var(--padding-light);
+    padding: 2em;
+  }
+  .avo-info{
+    width:100%;
+  }
+
+  .avo-info figure p{
+    margin: 8px 0;
+    line-height: 1em;
+    font-size: 0.7em;
+  }
+
+  .one figure, .two figure, .three figure, .four figure{
+    margin-top: 20px;
+    margin-left: 220px;
   }
 }
 
