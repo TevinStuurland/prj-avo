@@ -165,6 +165,18 @@ header h1 + img{
   color: var(--neutral-dark);
 }
 
+/* #BOOM-AVOCADO */
+.avoboom {
+  z-index: 1;
+  width: 600px;
+}
+
+.avoboom img{
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
 /* #AVOCADO-INFO */
 .avo-info{
   width: 600px;
@@ -201,7 +213,7 @@ header h1 + img{
 
 .one figure{
   background-repeat: no-repeat;
-  background-image: url("../media/img/avocados/hass-avocado.jpg");
+  background-image: url("../media/img/avocados/hass.png");
 
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
@@ -209,7 +221,7 @@ header h1 + img{
 
 .two figure{
   background-repeat: no-repeat;
-  background-image: url("../media/img/avocados/fuerte-avocado.jpg");
+  background-image: url("../media/img/avocados/fuerte.png");
 
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
@@ -217,7 +229,7 @@ header h1 + img{
 
 .three figure{
   background-repeat: no-repeat;
-  background-image: url("../media/img/avocados/ettinger-avocado.jpg");
+  background-image: url("../media/img/avocados/ettinger.png");
 
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
@@ -225,21 +237,35 @@ header h1 + img{
 
 .four figure{
   background-repeat: no-repeat;
-  background-image: url("../media/img/avocados/nabal-avocado.jpg");
+  background-image: url("../media/img/avocados/nabal.png");
 
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
 }
 
 .one figure:hover{
-  background-image: url("../media/img/avocados/hass-avocado-info.jpg");
+  background-image: url("../media/img/avocados/hass-info.png");
 
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
 }
 
 .two figure:hover{
-  background-image: url("../media/img/avocados/fuerte-avocado-info.jpg");
+  background-image: url("../media/img/avocados/fuerte-info.png");
+
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.three figure:hover{
+  background-image: url("../media/img/avocados/ettinger-info.png");
+
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.four figure:hover{
+  background-image: url("../media/img/avocados/nabal-info.png");
 
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
@@ -270,6 +296,14 @@ header h1 + img{
     padding: 2em;
   }
 
+ .avoboom{
+    width: 100%;
+  }
+
+ .avoboom img{
+    width: 150px;
+  }
+
   /*#MAIN*/
   p i:hover{
     color: var(--neutral-dark);
@@ -283,14 +317,14 @@ header h1 + img{
     width:100%;
   }
   .one figure{
-    background-image: url("../media/img/avocados/hass-avocado-info.jpg");
+    background-image: url("../media/img/avocados/hass-info.png");
   
     -webkit-transition: background-image 0.5s ease-in-out;
     transition: background-image 0.5s ease-in-out;
   }
 
   .two figure{
-    background-image: url("../media/img/avocados/fuerte-avocado-info.jpg");
+    background-image: url("../media/img/avocados/fuerte-info.png");
   
     -webkit-transition: background-image 0.5s ease-in-out;
     transition: background-image 0.5s ease-in-out;
@@ -298,7 +332,7 @@ header h1 + img{
 
   .three figure{
     background-repeat: no-repeat;
-    background-image: url("../media/img/avocados/ettinger-avocado.jpg");
+    background-image: url("../media/img/avocados/ettinger-info.png");
   
     -webkit-transition: background-image 0.5s ease-in-out;
     transition: background-image 0.5s ease-in-out;
@@ -306,18 +340,16 @@ header h1 + img{
   
   .four figure{
     background-repeat: no-repeat;
-    background-image: url("../media/img/avocados/nabal-avocado.jpg");
+    background-image: url("../media/img/avocados/nabal-info.png");
   
     -webkit-transition: background-image 0.5s ease-in-out;
     transition: background-image 0.5s ease-in-out;
   }
 
-  .avo-info figure li:nth-child(1){
-    margin-top: -10px;
-  }
   .one figure, .two figure, .three figure, .four figure{
-    height: 300px;
-    background-size: 600px;
+    height: 400px;
+    background-size: 100%;
+    background-position: center;
   }
 }
 
